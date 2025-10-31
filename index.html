@@ -7,7 +7,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <style>
-    /* ===== THEME COLORS ===== */
+    /*THEME COLORS*/
     :root {
       --bg: #f7f7f8;
       --text: #0f172a;
@@ -26,7 +26,7 @@
       --card: #111;
     }
 
-    /* ===== GLOBAL STYLE ===== */
+    /*   GLOBAL STYLE   */
     body {
       font-family: 'Poppins', sans-serif;
       background: var(--bg);
@@ -39,7 +39,7 @@
     h2 { color: var(--secondary); margin-bottom: 1rem; }
     a { text-decoration: none; }
 
-    /* ===== NAVBAR ===== */
+    /*   NAVBAR   */
     header {
       box-shadow: 0 3px 8px rgba(255, 255, 255, 0.1);
       background: var(--card);
@@ -51,7 +51,7 @@
     }
     .nav-link:hover { color: var(--accent) !important; }
 
-    /* ===== PROFILE ===== */
+    /*   PROFILE   */
     .profile-img {
       width: 150px;
       height: 150px;
@@ -62,7 +62,7 @@
     }
     .profile-img:hover { transform: scale(1.05); }
 
-    /* ===== SKILLS ===== */
+    /*   SKILLS   */
     .skill-box {
       background: var(--card);
       border: 1px solid var(--accent);
@@ -77,7 +77,7 @@
       transform: translateY(-5px);
         }
 
-        /* ===== PROJECTS ===== */
+        /*   PROJECTS   */
         .project-card {
       background: var(--card);
       border-radius: 10px;
@@ -90,7 +90,7 @@
       box-shadow: 0 6px 20px rgba(0,0,0,0.15);
     }
 
-    /* ===== BUTTON ===== */
+    /*   BUTTON   */
     .btn-gold {
       background: linear-gradient(90deg, var(--primary), var(--accent));
       color: #000;
@@ -99,13 +99,13 @@
     }
     .btn-gold:hover { opacity: 0.9; }
 
-    /* ===== FOOTER ===== */
+    /*   FOOTER   */
     footer {
       color: gray;
       padding: 1rem 0;
     }
 
-    /* ===== FADE-IN ANIMATION ===== */
+    /*   FADE-IN ANIMATION   */
     section {
       opacity: 0;
       transform: translateY(30px);
@@ -119,7 +119,7 @@
 </head>
 
 <body class="dark">
-  <!-- ===== NAVBAR ===== -->
+  <!--   NAVBAR   -->
   <header>
     <nav class="navbar navbar-expand-md navbar-light">
       <div class="container">
@@ -145,14 +145,14 @@
     </nav>
   </header>
 
-  <!-- ===== ABOUT ===== -->
+  <!--   ABOUT   -->
   <section id="about" class="text-center py-5">
     <img src="https://i.postimg.cc/yxFxd69z/Picsart-25-10-30-22-20-44-546.jpg" alt="profile" class="profile-img">
     <h2 class="mt-3">About Me</h2>
     <p>Hi, I'm <strong>Arham</strong> — a beginner web developer learning HTML, CSS, and JavaScript to build clean, modern websites.</p>
   </section>
 
-  <!-- ===== SKILLS ===== -->
+  <!--   SKILLS   -->
   <section id="skills" class="text-center py-5">
     <h2>My Skills</h2>
     <div class="container">
@@ -165,7 +165,7 @@
     </div>
   </section>
 
-  <!-- ===== PROJECTS ===== -->
+  <!--   PROJECTS   -->
   <section id="projects" class="text-center py-5">
     <h2>My Projects</h2>
     <div class="container">
@@ -177,7 +177,7 @@
     </div>
   </section>
 
-  <!-- ===== CONTACT ===== -->
+  <!--   CONTACT   -->
   <section id="contact" class="text-center py-5">
     <h2>Contact Me</h2>
     <div class="container" style="max-width: 400px;">
@@ -190,7 +190,7 @@
     </div>
   </section>
 
-  <!-- ===== FOOTER ===== -->
+  <!--   FOOTER   -->
   <footer class="text-center">
     <p>© 2025 My Portfolio | Designed by Hashir</p>
   </footer>
@@ -198,14 +198,14 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
   <script>
-    // ===== Dark / Light Mode Toggle =====
+    //   Dark / Light Mode Toggle  
     const btn = document.getElementById("modeBtn");
     btn.onclick = () => {
       document.body.classList.toggle("dark");
       btn.textContent = document.body.classList.contains("dark") ? "☀️" : "🌙";
     };
 
-    // ===== Smooth Scroll for Navigation Links =====
+    //   Smooth Scroll for Navigation Links  
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -215,7 +215,7 @@
       });
     });
 
-    // ===== Contact Form Feedback =====
+    //   Contact Form Feedback  
     const form = document.getElementById("form");
     form.onsubmit = e => {
       e.preventDefault();
@@ -223,7 +223,7 @@
       form.reset();
     };
 
-    // ===== Section Fade-In Animation on Scroll =====
+    //   Section Fade-In Animation on Scroll  
     const sections = document.querySelectorAll('section');
     window.addEventListener('scroll', () => {
       sections.forEach(sec => {
@@ -234,3 +234,4 @@
   </script>
 </body>
 </html>
+
